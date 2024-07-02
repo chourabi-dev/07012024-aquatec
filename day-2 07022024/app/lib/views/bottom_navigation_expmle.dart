@@ -27,6 +27,8 @@ class _DemoBUttomNavigationState extends State<DemoBUttomNavigation> {
 
         body: _tabs.elementAt(_currentIndex),
 
+        floatingActionButton: _currentIndex == 0 ?  FloatingActionButton(onPressed: (){},) : null,
+
         bottomNavigationBar: BottomNavigationBar(
 
           onTap: (int index){
